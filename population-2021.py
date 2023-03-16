@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import pandas as pd
+import os
 
 from rdflib import Namespace
 from datacube import create_mean_population_data_cube
@@ -17,6 +18,10 @@ def main():
     file_path = "./data/130141-22data2021.csv"
     data = load_data(file_path)
     data_cube = create_mean_population_data_cube(data)
+
+    if not os.path.exists('./data/data-cubes'):
+        os.makedirs('./data/data-cubes')
+
     data_cube.serialize(format="ttl", destination="./data/data-cubes/population-2021.ttl")
 
     print("-" * 5, " DataCube Created ", "-" * 5)

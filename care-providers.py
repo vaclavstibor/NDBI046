@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import pandas as pd
+import os
 
 from datacube import create_care_providers_data_cube
 from rdflib import Namespace
@@ -18,6 +19,10 @@ def main():
     file_path = "./data/narodni-registr-poskytovatelu-zdravotnich-sluzeb.csv"
     data = load_csv_file_as_df(file_path)
     data_cube = create_care_providers_data_cube(data)
+
+    if not os.path.exists('./data/data-cubes'):
+        os.makedirs('./data/data-cubes')
+
     data_cube.serialize(format="ttl", destination="./data/data-cubes/care-providers.ttl")
     
     print("-" * 5, " DataCube Created ", "-" * 5)
