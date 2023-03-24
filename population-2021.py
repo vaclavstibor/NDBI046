@@ -15,7 +15,7 @@ SDMX_CODE = Namespace("http://purl.org/linked-data/sdmx/2009/code#")
 
 def main():
 
-    file_path = "./data/130141-22data2021.csv"
+    file_path = "./data/population-2021.csv"
     data = load_data(file_path)
     data_cube = create_mean_population_data_cube(data)
 
@@ -24,11 +24,11 @@ def main():
 
     data_cube.serialize(format="ttl", destination="./data/data-cubes/population-2021.ttl")
 
-    print("-" * 5, " DataCube Created ", "-" * 5)
+    print("-" * 5, " ./data/data-cubes/population-2021.ttl CREATED ", "-" * 5)
 
 def load_map():
 
-    file_path = "./data/číselník-okresů-vazba-101-nadřízený.csv"
+    file_path = "./data/cislenik-okresu.csv"
 
     map_df = pd.read_csv(file_path)
     map_df = map_df[['CHODNOTA2', 'CHODNOTA1']] 

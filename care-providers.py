@@ -25,7 +25,7 @@ def main():
 
     data_cube.serialize(format="ttl", destination="./data/data-cubes/care-providers.ttl")
     
-    print("-" * 5, " DataCube Created ", "-" * 5)
+    print("-" * 5, " ./data/data-cubes/care-providers.ttl CREATED ", "-" * 5)
 
 def load_csv_file_as_df(file_path: str):
 
