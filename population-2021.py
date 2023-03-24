@@ -22,9 +22,9 @@ def main():
     if not os.path.exists('./data/data-cubes'):
         os.makedirs('./data/data-cubes')
 
-    data_cube.serialize(format="ttl", destination="./data/data-cubes/population-2021.ttl")
+    data_cube.serialize(format="ttl", destination="./data/data-cubes/population.ttl")
 
-    print("-" * 5, " ./data/data-cubes/population-2021.ttl CREATED ", "-" * 5)
+    print("-" * 5, " ./data/data-cubes/population.ttl CREATED ", "-" * 5)
 
 def load_map():
 

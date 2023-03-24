@@ -23,9 +23,9 @@ def main():
     if not os.path.exists('./data/data-cubes'):
         os.makedirs('./data/data-cubes')
 
-    data_cube.serialize(format="ttl", destination="./data/data-cubes/care-providers.ttl")
+    data_cube.serialize(format="ttl", destination="./data/data-cubes/health_care.ttl")
     
-    print("-" * 5, " ./data/data-cubes/care-providers.ttl CREATED ", "-" * 5)
+    print("-" * 5, " ./data/data-cubes/health_care.ttl CREATED ", "-" * 5)
 
 def load_csv_file_as_df(file_path: str):
 

@@ -1,4 +1,7 @@
 # NDBI046 Introduction to Data Engeneering
+## Apache Airflow
+- Airflow is written in python, so python needs to be installed in the environment, and python must be greater than 2.7, 3.x is recommended.
+
 ## System requirements
 - Operační systém: Windows, macOS, Linux nebo jiný operační systém s podporou pro Python
 - Verze Pythonu: Python 3.8 a novější (testováno na 3.8.6 64-bit)
