@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 import pandas as pd
-import os
 
-from datacube import create_care_providers_data_cube
+from operators.datacube import create_care_providers_data_cube
 from rdflib import Namespace
 
 NS = Namespace("https://vaclavstibor.github.io/ontology#")
@@ -14,23 +13,17 @@ SDMX_CONCEPT = Namespace("http://purl.org/linked-data/sdmx/2009/concept#")
 SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
 SDMX_CODE = Namespace("http://purl.org/linked-data/sdmx/2009/code#")
 
-def main():
+def care_providers_data_cube():
 
-    file_path = "./data/narodni-registr-poskytovatelu-zdravotnich-sluzeb.csv"
+    file_path = "./airflow/data/care-providers.csv"
     data = load_csv_file_as_df(file_path)
     data_cube = create_care_providers_data_cube(data)
 
-    if not os.path.exists('./data/data-cubes'):
-        os.makedirs('./data/data-cubes')
-
-    data_cube.serialize(format="ttl", destination="./data/data-cubes/health_care.ttl")
+    data_cube.serialize(format="ttl", destination="./airflow/data/data-cubes/health_care.ttl")
     
-    print("-" * 5, " ./data/data-cubes/health_care.ttl CREATED ", "-" * 5)
+    print("-" * 5, " data-cubes/health_care.ttl CREATED ", "-" * 5)
 
 def load_csv_file_as_df(file_path: str):
 
     data_frame = pd.read_csv(file_path, low_memory=False)
     return data_frame
-
-if __name__ == "__main__":
-    main()

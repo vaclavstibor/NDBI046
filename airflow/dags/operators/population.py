@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 from rdflib import Namespace
-from datacube import create_mean_population_data_cube
+from operators.datacube import create_mean_population_data_cube
 
 NS = Namespace("https://vaclavstibor.github.io/ontology#")
 NSR = Namespace("https://vaclavstibor.github.io/resources/")
@@ -13,24 +13,21 @@ SDMX_CONCEPT = Namespace("http://purl.org/linked-data/sdmx/2009/concept#")
 SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
 SDMX_CODE = Namespace("http://purl.org/linked-data/sdmx/2009/code#")
 
-def main():
+def population_data_cube():
 
-    file_path = "./data/population-2021.csv"
+    file_path = "./airflow/data/population.csv"
     data = load_data(file_path)
     data_cube = create_mean_population_data_cube(data)
 
-    if not os.path.exists('./data/data-cubes'):
-        os.makedirs('./data/data-cubes')
+    data_cube.serialize(format="ttl", destination="./airflow/data/data-cubes/population.ttl")
 
-    data_cube.serialize(format="ttl", destination="./data/data-cubes/population.ttl")
-
-    print("-" * 5, " ./data/data-cubes/population.ttl CREATED ", "-" * 5)
+    print("-" * 5, " population.ttl CREATED ", "-" * 5)
 
 def load_map():
 
-    file_path = "./data/cislenik-okresu.csv"
+    file_path = "./airflow/data/lau-nuts-map.csv"
 
-    map_df = pd.read_csv(file_path)
+    map_df = pd.read_csv(file_path, low_memory=False)
     map_df = map_df[['CHODNOTA2', 'CHODNOTA1']] 
     map_df.columns = ['NUTS_code', 'LAU_code']
     
@@ -51,7 +48,7 @@ def load_data(data_path: str):
 
     data['county_code'] = data['LAU_code'].str[:-1]
 
-    care_providers_df = pd.read_csv("./data/narodni-registr-poskytovatelu-zdravotnich-sluzeb.csv", 
+    care_providers_df = pd.read_csv("./airflow/data/care-providers.csv", 
                                     usecols=["Kraj", "OkresCode"])
 
     data["county_txt"] = data["LAU_code"].apply(
@@ -61,6 +58,3 @@ def load_data(data_path: str):
     # TODO Drop unnecessary columns
 
     return data
-
-if __name__ == "__main__":
-    main()
