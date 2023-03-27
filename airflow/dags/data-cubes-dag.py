@@ -23,7 +23,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 @dag(
     dag_id="data-cubes",
     schedule=None,
-    start_date=datetime(2023, 3, 20),
+    start_date=datetime(2023, 3, 27),
 )
 
 def main():
