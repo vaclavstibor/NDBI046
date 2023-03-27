@@ -2,6 +2,8 @@ from datetime import datetime
 from urllib import request
 import ssl
 
+from airflow import DAG
+
 from airflow.decorators import dag, task
 
 from operators.care_providers import care_providers_data_cube
@@ -24,6 +26,8 @@ ssl._create_default_https_context = ssl._create_unverified_context
     dag_id="data-cubes",
     schedule=None,
     start_date=datetime(2023, 3, 27),
+    catchup=False,
+    tags=["NDBI046"]
 )
 
 def main():

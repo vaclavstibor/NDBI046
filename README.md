@@ -1,30 +1,21 @@
 # NDBI046 Introduction to Data Engeneering
-## Apache Airflow
-- Airflow je napsán v jazyce python, proto musí být python nainstalován v prostředí a python musí být vyšší než 2.7, doporučuje se 3.x.
 
 ## System requirements
 - Operační systém: Windows, macOS, Linux nebo jiný operační systém s podporou pro Python
 - Verze Pythonu: Python 3.8 a novější (testováno na 3.8.6 64-bit)
-- Procesor: Intel nebo AMD procesor s 64bitovou architekturou
-- Paměť RAM: minimálně 4 GB
-- Pevný disk: minimálně 5 GB volného místa (především pro instalaci Pythonu a jeho knihoven)
-- Grafická karta: nevyžaduje se speciální grafická karta (pro běh Pythonu)
-- Připojení k internetu: vyžaduje se pro stahování a aktualizaci knihoven a balíčků pro Python, stejně jako pro data (nicméně jsou obshame i tohoto repozitáře)
+- Docker (alespoň 4 GB volného paměti)
 
 ## Installation instructions
-- Stáhněte a nainstailujte nejnovější verzi Pythonu (idálně 3.8.6) https://www.python.org/downloads/
-- Nakolujte tento GitHub repozitář
-- Tento repozitář dále obsahuje i data, se kterými chceme pracovat, nicméně také obsahuje skript pro případné stažení z internetu
-- Pro instalaci knihoven spusťte následující `pip` (instalace nástroje `pip python -m ensurepip --default-pip`)
-)příkaz v příkazové řádce tohto repozitáře
-    - `pip install -r requirements.txt`
-- Pro vytvoření datové kostky **Care Providers** spusťte `python care-providers.py`
-- Pro vytvoření datové kostky **Population 2021** spusťte `python population-2021.py`
+- Nakloujte tento repozitář
+- V adresáři `./airflow` spusťte `docker compose up --build`
+- Po inicializaci kontejneru webserver naleznete na http://localhost:8080, kde přihlašoací údaje jsou defaultně nastavené na 
+    - login: `airflow`
+    - password: `airflow`
+- Pro ukončení a odstranění kontejneru spusťte `docker compose down --volumes --rmi all`
 
 ## Description of script files
 ### care-providers.py
-#### Input
-- Skript po spuštění automaticky načte potřebná data umístěná v adresáři `./data`
+- Skript po spuštění automaticky načte potřebná data umístěná v adresáři `./airflow/data`
 #### Description
 - Datová kostka
     - Dimension: county (okres)
@@ -33,11 +24,10 @@
     - Measure: number of care providers per county (počet poskytovatelů péče)
 #### Output
 - Výstupem bude soubor formátu turtle popisující datovou kostku
-- `./data/data-cubes/population-2021.ttl`
+- `./airflow/ata/data-cubes/population-2021.ttl`
 
 ### population-2021.py
-#### Input
-- Skript po spuštění automaticky načte potřebná data umístěná v adresáři `./data`
+- Skript po spuštění automaticky načte potřebná data umístěná v adresáři `./airflow/data`
 #### Description
 - Datová kostka
     - Dimension: county (okres)
@@ -45,7 +35,7 @@
     - Measure: mean population per county (střední stav obyvatel)
 #### Output
 - Výstupem bude soubor formátu turtle popisující datovou kostku
-- `./data/data-cubes/population-2021.ttl`
+- `./airflow/data/data-cubes/population-2021.ttl`
 
 ### datacube.py
 - Obsahuje všechny potřebné implementace funkcí pro konstrukci datové kostky, jenž využíváme v `care-providers.py` a `population-2021.py`
