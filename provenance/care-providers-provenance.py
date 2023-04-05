@@ -7,7 +7,7 @@ NSR = Namespace("https://vaclavstibor.github.io/resources/")
 NSP = Namespace("https://vaclavstibor.github.io/provenance/")
 
 def construct_graph() -> Graph:
-    graph = Graph(bind_namespaces="rdflib") # bind_namespaces={"prov": PROV, "nsr": NSR, "nsp": NSP}
+    graph = Graph(bind_namespaces="rdflib") #bind_namespaces={"prov": PROV, "nsr": NSR, "nsp": NSP}
 
     create_entities(graph)
     create_agents(graph)
