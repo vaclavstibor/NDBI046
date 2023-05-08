@@ -6,7 +6,7 @@ from rdflib.namespace import DCAT, RDF, DCTERMS, RDFS
 NSR = Namespace('https://vaclavstibor.github.io/resources/')
 
 def main():
-    collector = Graph()
+    collector = Graph(bind_namespaces="rdflib")
     create_dataset_entry(collector)
     collector.serialize(format='ttl', encoding='UTF-8', destination="./dataset-entry/population-dataset")
 
