@@ -1,25 +1,25 @@
-@prefix ns1: <http://www.w3.org/ns/dcat#> .
-@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix cdterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://vaclavstibor.github.io/resources/PopulationDataCube> a ns1:Dataset ;
+<https://vaclavstibor.github.io/resources/PopulationDataCube> a dcat:Dataset ;
     rdfs:label "Population data cube"@en ;
-    ns2:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
-    ns2:creator <https://github.com/vaclavstibor> ;
-    ns2:description "A data cube containing mean population of Czech counties and regions in 2021"@en ;
-    ns2:publisher <https://github.com/vaclavstibor> ;
-    ns2:spatial <http://publications.europa.eu/resource/authority/country/CZE> ;
-    ns2:title "Population data cube"@en ;
-    ns1:distribution <https://vaclavstibor.github.io/resources/PopulationDataCube.ttl> ;
-    ns1:keyword "counties"@en,
+    cdterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    cdterms:creator <https://github.com/vaclavstibor> ;
+    cdterms:description "Data cube that presents the average population figures for Czech counties and regions in 2021"@en ;
+    cdterms:publisher <https://github.com/vaclavstibor> ;
+    cdterms:spatial <http://publications.europa.eu/resource/authority/country/CZE> ;
+    cdterms:title "Population data cube"@en ;
+    dcat:distribution <https://vaclavstibor.github.io/resources/PopulationDataCube.ttl> ;
+    dcat:keyword "counties"@en,
         "mean population"@en,
         "population"@en,
-        "population of Ctech counties"@en,
+        "population of Czech counties"@en,
         "region"@en ;
-    ns1:theme <http://eurovoc.europa.eu/2908> .
+    dcat:theme <http://eurovoc.europa.eu/2908> .
 
-<https://vaclavstibor.github.io/resources/PopulationDataCube.ttl> a ns1:Distribution ;
-    ns2:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    ns1:accessURL <https://vaclavstibor.github.io/resources/PopulationDataCube.ttl> ;
-    ns1:mediaType <http://www.iana.org/assignments/media-types/text/turtle> .
+<https://vaclavstibor.github.io/resources/PopulationDataCube.ttl> a dcat:Distribution ;
+    cdterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcat:accessURL <https://vaclavstibor.github.io/resources/PopulationDataCube.ttl> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/turtle> .
 
