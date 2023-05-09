@@ -1,5 +1,8 @@
 # NDBI046 Introduction to Data Engeneering
 
+## Github Pages
+- Site is live at https://vaclavstibor.github.io/NDBI046/
+
 ## System requirements
 - Operační systém: Windows, macOS, Linux nebo jiný operační systém s podporou pro Python
 - Verze Pythonu: Python 3.8 a novější (testováno na 3.8.6 64-bit)
