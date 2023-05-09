@@ -1,0 +1,1259 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://spdx.org/rdf/terms#> .
+@prefix nso: <https://vaclavstibor.github.io/ontology#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://vaclavstibor.github.io/resources/County> a rdfs:Class ;
+    rdfs:label "Okres"@cs,
+        "County"@en ;
+    rdfs:isDefinedBy <https://vaclavstibor.github.io/resources/io/resources/county> ;
+    skos:prefLabel "Okres"@cs,
+        "County"@en .
+
+<https://vaclavstibor.github.io/resources/Region> a rdfs:Class ;
+    rdfs:label "Kraj"@cs,
+        "Region"@en ;
+    rdfs:isDefinedBy <https://vaclavstibor.github.io/resources/io/resources/region> ;
+    skos:prefLabel "Kraj"@cs,
+        "Region"@en .
+
+<_:distribution> a <https://vaclavstibor.github.io/resources/Distribution> ;
+    ns1:checksum <_:checksum> .
+
+<https://vaclavstibor.github.io/resources/observation-00> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0427> ;
+    nso:meanPopulation 116930 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ042> .
+
+<https://vaclavstibor.github.io/resources/observation-01> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0524> ;
+    nso:meanPopulation 78479 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ052> .
+
+<https://vaclavstibor.github.io/resources/observation-02> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0514> ;
+    nso:meanPopulation 71593 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ051> .
+
+<https://vaclavstibor.github.io/resources/observation-03> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0522> ;
+    nso:meanPopulation 78763 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ052> .
+
+<https://vaclavstibor.github.io/resources/observation-04> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0531> ;
+    nso:meanPopulation 103657 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ053> .
+
+<https://vaclavstibor.github.io/resources/observation-05> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0642> ;
+    nso:meanPopulation 378424 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ064> .
+
+<https://vaclavstibor.github.io/resources/observation-06> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0644> ;
+    nso:meanPopulation 114758 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ064> .
+
+<https://vaclavstibor.github.io/resources/observation-07> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0208> ;
+    nso:meanPopulation 100584 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-08> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0646> ;
+    nso:meanPopulation 91984 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ064> .
+
+<https://vaclavstibor.github.io/resources/observation-09> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0713> ;
+    nso:meanPopulation 107697 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ071> .
+
+<https://vaclavstibor.github.io/resources/observation-10> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0714> ;
+    nso:meanPopulation 126826 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ071> .
+
+<https://vaclavstibor.github.io/resources/observation-11> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0322> ;
+    nso:meanPopulation 84661 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ032> .
+
+<https://vaclavstibor.github.io/resources/observation-12> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0326> ;
+    nso:meanPopulation 48587 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ032> .
+
+<https://vaclavstibor.github.io/resources/observation-13> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0411> ;
+    nso:meanPopulation 88030 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ041> .
+
+<https://vaclavstibor.github.io/resources/observation-14> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0723> ;
+    nso:meanPopulation 140392 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ072> .
+
+<https://vaclavstibor.github.io/resources/observation-15> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0724> ;
+    nso:meanPopulation 188947 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ072> .
+
+<https://vaclavstibor.github.io/resources/observation-16> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0206> ;
+    nso:meanPopulation 108889 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-17> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0209> ;
+    nso:meanPopulation 186558 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-18> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ020C> ;
+    nso:meanPopulation 54767 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-19> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0314> ;
+    nso:meanPopulation 70582 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ031> .
+
+<https://vaclavstibor.github.io/resources/observation-20> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0323> ;
+    nso:meanPopulation 187985 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ032> .
+
+<https://vaclavstibor.github.io/resources/observation-21> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0421> ;
+    nso:meanPopulation 126492 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ042> .
+
+<https://vaclavstibor.github.io/resources/observation-22> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0521> ;
+    nso:meanPopulation 162193 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ052> .
+
+<https://vaclavstibor.github.io/resources/observation-23> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0802> ;
+    nso:meanPopulation 212422 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ080> .
+
+<https://vaclavstibor.github.io/resources/observation-24> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0312> ;
+    nso:meanPopulation 60033 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ031> .
+
+<https://vaclavstibor.github.io/resources/observation-25> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0325> ;
+    nso:meanPopulation 80228 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ032> .
+
+<https://vaclavstibor.github.io/resources/observation-26> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0202> ;
+    nso:meanPopulation 95823 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-27> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0207> ;
+    nso:meanPopulation 127221 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-28> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0711> ;
+    nso:meanPopulation 36884 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ071> .
+
+<https://vaclavstibor.github.io/resources/observation-29> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0205> ;
+    nso:meanPopulation 75402 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-30> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0201> ;
+    nso:meanPopulation 99008 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-31> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ020A> ;
+    nso:meanPopulation 149990 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-32> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ020B> ;
+    nso:meanPopulation 114060 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-33> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0311> ;
+    nso:meanPopulation 194994 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ031> .
+
+<https://vaclavstibor.github.io/resources/observation-34> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0315> ;
+    nso:meanPopulation 50225 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ031> .
+
+<https://vaclavstibor.github.io/resources/observation-35> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0801> ;
+    nso:meanPopulation 89906 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ080> .
+
+<https://vaclavstibor.github.io/resources/observation-36> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0804> ;
+    nso:meanPopulation 149907 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ080> .
+
+<https://vaclavstibor.github.io/resources/observation-37> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0806> ;
+    nso:meanPopulation 312908 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ080> .
+
+<https://vaclavstibor.github.io/resources/observation-38> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0313> ;
+    nso:meanPopulation 89325 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ031> .
+
+<https://vaclavstibor.github.io/resources/observation-39> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0321> ;
+    nso:meanPopulation 54313 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ032> .
+
+<https://vaclavstibor.github.io/resources/observation-40> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0412> ;
+    nso:meanPopulation 110195 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ041> .
+
+<https://vaclavstibor.github.io/resources/observation-41> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0324> ;
+    nso:meanPopulation 68623 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ032> .
+
+<https://vaclavstibor.github.io/resources/observation-42> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0423> ;
+    nso:meanPopulation 117473 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ042> .
+
+<https://vaclavstibor.github.io/resources/observation-43> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0426> ;
+    nso:meanPopulation 124401 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ042> .
+
+<https://vaclavstibor.github.io/resources/observation-44> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0534> ;
+    nso:meanPopulation 135977 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ053> .
+
+<https://vaclavstibor.github.io/resources/observation-45> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0511> ;
+    nso:meanPopulation 101997 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ051> .
+
+<https://vaclavstibor.github.io/resources/observation-46> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0513> ;
+    nso:meanPopulation 173337 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ051> .
+
+<https://vaclavstibor.github.io/resources/observation-47> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0523> ;
+    nso:meanPopulation 108092 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ052> .
+
+<https://vaclavstibor.github.io/resources/observation-48> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0525> ;
+    nso:meanPopulation 115365 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ052> .
+
+<https://vaclavstibor.github.io/resources/observation-49> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0647> ;
+    nso:meanPopulation 113389 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ064> .
+
+<https://vaclavstibor.github.io/resources/observation-50> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0631> ;
+    nso:meanPopulation 93521 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ063> .
+
+<https://vaclavstibor.github.io/resources/observation-51> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0532> ;
+    nso:meanPopulation 171461 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ053> .
+
+<https://vaclavstibor.github.io/resources/observation-52> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0634> ;
+    nso:meanPopulation 109373 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ063> .
+
+<https://vaclavstibor.github.io/resources/observation-53> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0715> ;
+    nso:meanPopulation 118618 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ071> .
+
+<https://vaclavstibor.github.io/resources/observation-54> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0204> ;
+    nso:meanPopulation 103345 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-55> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0633> ;
+    nso:meanPopulation 71457 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ063> .
+
+<https://vaclavstibor.github.io/resources/observation-56> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0635> ;
+    nso:meanPopulation 117181 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ063> .
+
+<https://vaclavstibor.github.io/resources/observation-57> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0641> ;
+    nso:meanPopulation 107795 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ064> .
+
+<https://vaclavstibor.github.io/resources/observation-58> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0645> ;
+    nso:meanPopulation 151344 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ064> .
+
+<https://vaclavstibor.github.io/resources/observation-59> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0533> ;
+    nso:meanPopulation 102799 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ053> .
+
+<https://vaclavstibor.github.io/resources/observation-60> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0632> ;
+    nso:meanPopulation 112206 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ063> .
+
+<https://vaclavstibor.github.io/resources/observation-61> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0643> ;
+    nso:meanPopulation 224794 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ064> .
+
+<https://vaclavstibor.github.io/resources/observation-62> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0722> ;
+    nso:meanPopulation 139922 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ072> .
+
+<https://vaclavstibor.github.io/resources/observation-63> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0803> ;
+    nso:meanPopulation 241184 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ080> .
+
+<https://vaclavstibor.github.io/resources/observation-64> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0316> ;
+    nso:meanPopulation 69794 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ031> .
+
+<https://vaclavstibor.github.io/resources/observation-65> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0712> ;
+    nso:meanPopulation 233661 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ071> .
+
+<https://vaclavstibor.github.io/resources/observation-66> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0721> ;
+    nso:meanPopulation 103753 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ072> .
+
+<https://vaclavstibor.github.io/resources/observation-67> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0805> ;
+    nso:meanPopulation 173853 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ080> .
+
+<https://vaclavstibor.github.io/resources/observation-68> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0203> ;
+    nso:meanPopulation 164359 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ020> .
+
+<https://vaclavstibor.github.io/resources/observation-69> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0413> ;
+    nso:meanPopulation 85452 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ041> .
+
+<https://vaclavstibor.github.io/resources/observation-70> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0422> ;
+    nso:meanPopulation 121643 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ042> .
+
+<https://vaclavstibor.github.io/resources/observation-71> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0425> ;
+    nso:meanPopulation 107090 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ042> .
+
+<https://vaclavstibor.github.io/resources/observation-72> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0317> ;
+    nso:meanPopulation 101333 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ031> .
+
+<https://vaclavstibor.github.io/resources/observation-73> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0512> ;
+    nso:meanPopulation 90204 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ051> .
+
+<https://vaclavstibor.github.io/resources/observation-74> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0327> ;
+    nso:meanPopulation 52793 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ032> .
+
+<https://vaclavstibor.github.io/resources/observation-75> a qb:Observation ;
+    qb:dataSet <https://vaclavstibor.github.io/resources/MeanPopulation> ;
+    nso:county <https://vaclavstibor.github.io/resources/county/CZ0424> ;
+    nso:meanPopulation 85466 ;
+    nso:region <https://vaclavstibor.github.io/resources/region/CZ042> .
+
+<_:checksum> a ns1:Checksum ;
+    ns1:algorithm ns1:checksumAlgorithm_sha256 ;
+    ns1:checksumValue "d423bb321b061681836d2eea74f6470e90df9d41"^^xsd:hexBinary .
+
+nso:county a qb:CodedProperty,
+        qb:DimensionProperty,
+        rdfs:Property ;
+    rdfs:label "Okres"@cs,
+        "County"@en ;
+    qb:codeList <https://vaclavstibor.github.io/resources/county> ;
+    qb:concept sdmx-concept:refArea ;
+    rdfs:range <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:subPropertyOf sdmx-dimension:refArea .
+
+nso:meanPopulation a qb:MeasureProperty,
+        rdfs:Property ;
+    rdfs:label "Střední stav obyvatel"@cs,
+        "Mean population"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+nso:region a qb:CodedProperty,
+        qb:DimensionProperty,
+        rdfs:Property ;
+    rdfs:label "Kraj"@cs,
+        "Region"@en ;
+    qb:codeList <https://vaclavstibor.github.io/resources/region> ;
+    qb:concept sdmx-concept:refArea ;
+    rdfs:range <https://vaclavstibor.github.io/resources/Region> .
+
+nso:structure a qb:DataStructureDefinition ;
+    qb:component [ qb:dimension nso:region ],
+        [ qb:dimension nso:county ],
+        [ qb:measure nso:meanPopulation ] .
+
+<https://vaclavstibor.github.io/resources/county/CZ0201> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Benešov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Benešov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0202> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Beroun"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Beroun"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0203> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Kladno"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Kladno"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0204> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Kolín"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Kolín"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0205> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Kutná Hora"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Kutná Hora"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0206> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Mělník"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Mělník"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0207> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Mladá Boleslav"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Mladá Boleslav"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0208> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Nymburk"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Nymburk"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0209> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Praha-východ"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Praha-východ"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ020A> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Praha-západ"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Praha-západ"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ020B> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Příbram"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Příbram"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ020C> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Rakovník"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Rakovník"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0311> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "České Budějovice"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "České Budějovice"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0312> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Český Krumlov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Český Krumlov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0313> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Jindřichův Hradec"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Jindřichův Hradec"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0314> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Písek"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Písek"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0315> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Prachatice"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Prachatice"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0316> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Strakonice"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Strakonice"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0317> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Tábor"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Tábor"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0321> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Domažlice"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Domažlice"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0322> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Klatovy"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Klatovy"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0323> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Plzeň-město"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Plzeň-město"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0324> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Plzeň-jih"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Plzeň-jih"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0325> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Plzeň-sever"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Plzeň-sever"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0326> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Rokycany"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Rokycany"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0327> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Tachov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Tachov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0411> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Cheb"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Cheb"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0412> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Karlovy Vary"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Karlovy Vary"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0413> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Sokolov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Sokolov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0421> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Děčín"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Děčín"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0422> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Chomutov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Chomutov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0423> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Litoměřice"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Litoměřice"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0424> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Louny"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Louny"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0425> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Most"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Most"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0426> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Teplice"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Teplice"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0427> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Ústí nad Labem"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Ústí nad Labem"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0511> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Česká Lípa"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Česká Lípa"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0512> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Jablonec nad Nisou"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Jablonec nad Nisou"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0513> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Liberec"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Liberec"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0514> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Semily"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Semily"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0521> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Hradec Králové"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Hradec Králové"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0522> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Jičín"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Jičín"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0523> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Náchod"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Náchod"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0524> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Rychnov nad Kněžnou"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Rychnov nad Kněžnou"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0525> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Trutnov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Trutnov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0531> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Chrudim"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Chrudim"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0532> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Pardubice"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Pardubice"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0533> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Svitavy"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Svitavy"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0534> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Ústí nad Orlicí"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Ústí nad Orlicí"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0631> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Havlíčkův Brod"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Havlíčkův Brod"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0632> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Jihlava"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Jihlava"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0633> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Pelhřimov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Pelhřimov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0634> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Třebíč"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Třebíč"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0635> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Žďár nad Sázavou"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Žďár nad Sázavou"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0641> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Blansko"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Blansko"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0642> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Brno-město"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Brno-město"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0643> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Brno-venkov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Brno-venkov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0644> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Břeclav"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Břeclav"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0645> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Hodonín"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Hodonín"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0646> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Vyškov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Vyškov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0647> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Znojmo"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Znojmo"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0711> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Jeseník"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Jeseník"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0712> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Olomouc"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Olomouc"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0713> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Prostějov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Prostějov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0714> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Přerov"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Přerov"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0715> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Šumperk"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Šumperk"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0721> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Kroměříž"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Kroměříž"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0722> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Uherské Hradiště"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Uherské Hradiště"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0723> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Vsetín"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Vsetín"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0724> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Zlín"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Zlín"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0801> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Bruntál"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Bruntál"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0802> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Frýdek-Místek"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Frýdek-Místek"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0803> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Karviná"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Karviná"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0804> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Nový Jičín"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Nový Jičín"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0805> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Opava"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Opava"@cs .
+
+<https://vaclavstibor.github.io/resources/county/CZ0806> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/County> ;
+    rdfs:label "Ostrava-město"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/county> ;
+    skos:prefLabel "Ostrava-město"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ041> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Karlovarský kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Karlovarský kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ051> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Liberecký kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Liberecký kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ053> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Pardubický kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Pardubický kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ072> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Zlínský kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Zlínský kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ052> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Královéhradecký kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Královéhradecký kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ063> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Kraj Vysočina"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Kraj Vysočina"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ071> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Olomoucký kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Olomoucký kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ080> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Moravskoslezský kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Moravskoslezský kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ031> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Jihočeský kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Jihočeský kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ032> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Plzeňský kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Plzeňský kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ042> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Ústecký kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Ústecký kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ064> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Jihomoravský kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Jihomoravský kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region/CZ020> a sdmx-code:Area,
+        skos:Concept,
+        <https://vaclavstibor.github.io/resources/Region> ;
+    rdfs:label "Středočeský kraj"@cs ;
+    skos:inScheme sdmx-code:area,
+        <https://vaclavstibor.github.io/resources/region> ;
+    skos:prefLabel "Středočeský kraj"@cs .
+
+<https://vaclavstibor.github.io/resources/region> a skos:ConceptScheme ;
+    rdfs:label "KrajCode"@cs,
+        "RegionCode"@en ;
+    rdfs:isDefinedBy <https://vaclavstibor.github.io/resources/Region> ;
+    skos:prefLabel "KrajCode"@cs,
+        "RegionCode"@en .
+
+<https://vaclavstibor.github.io/resources/MeanPopulation> a qb:DataSet ;
+    rdfs:label "Střední stav obyvatel - okresy 2021"@cs,
+        "Mean Population - county 2021"@en ;
+    dct:description "Datová kostka středního stavu obyvatel pro okresy v roce 2021."@cs,
+        "Datacube of mean population per county in 2021."@en ;
+    dct:issued "2023-03-14"^^xsd:date ;
+    dct:license "https://opensource.org/license/mit/"^^xsd:anyURI ;
+    dct:modified "2023-03-14"^^xsd:date ;
+    dct:publisher "https://github.com/vaclavstibor"^^xsd:anyURI ;
+    dct:title "Střední stav obyvatel - okresy 2021"@cs,
+        "Mean Population - county 2021"@en ;
+    qb:structure nso:structure .
+
+<https://vaclavstibor.github.io/resources/county> a skos:ConceptScheme ;
+    rdfs:label "OkresCode"@cs,
+        "CountyCode"@en ;
+    rdfs:isDefinedBy <https://vaclavstibor.github.io/resources/County> ;
+    skos:prefLabel "OkresCode"@cs,
+        "CountyCode"@en .
+
